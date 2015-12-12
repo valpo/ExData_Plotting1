@@ -12,6 +12,6 @@ plot1 <- function(inputFile, outputFile)
   b <- barplot(z,space=0,col=c("red"),main="Global Active Power",xlab="Global Active Power (kilowatts)", ylab="Frequency", xaxt = 'n')
   axis(side=1,at=c(0,4,8,12),labels=c(0,2,4,6))
   
-  dev.copy(png, outputFile)
+  dev.copy(png, outputFile, width=504,height=504)
   dev.off()
 }

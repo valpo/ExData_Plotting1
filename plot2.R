@@ -8,6 +8,6 @@ plot2 <- function(inputFile, outputFile)
   dx$DateTime <- as.POSIXct(paste(dx$Date, dx$Time))
   plot(dx$DateTime, dx$Global_active_power, type="l",ylab="Global Active Power (kilowatts)", xlab="")
   
-  dev.copy(png, outputFile, width=504,height=504)
+  dev.copy(png, outputFile, width=480,height=480)
   dev.off()
 }
